@@ -3292,6 +3292,11 @@ event-target-shim@^5.0.0:
   resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
   integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
 
+events@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/events/-/events-1.1.0.tgz#4b389fc200f910742ebff3abb2efe33690f45429"
+  integrity sha512-bXhhA5cOCDO4JSjAeFQYx/NrQKQrRvh/HaMzkwhPpMcNxBBp3Qbz9R5RXFIhznG50VBBt5Uh09koi3Etc8YwNQ==
+
 execa@^5.0.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/execa/-/execa-5.1.1.tgz#f80ad9cbf4298f7bd1d4c9555c21e93741c411dd"
@@ -5403,6 +5408,25 @@ react-is@^19.1.0:
   version "19.1.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.0.tgz#805bce321546b7e14c084989c77022351bbdd11b"
   integrity sha512-Oe56aUPnkHyyDxxkvqtd7KkdQP5uIUfHxd5XTb3wE9d/kRnZLmKbDB0GWk919tdQ+mxxPtG6EAs6RMT6i1qtHg==
+
+react-native-permissions@^4.1.5:
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-4.1.5.tgz#db4d1ddbf076570043f4fd4168f54bb6020aec92"
+  integrity sha512-r6VMRacASmtRHS+GZ+5HQCp9p9kiE+UU9magHOZCXZLTJitdTuVHWZRrb4v4oqZGU+zAp3mZhTQftuMMv+WLUg==
+
+"react-native-replace-dialer@https://github.com/telefon-one/react-native-replace-dialer":
+  version "0.0.11"
+  resolved "https://github.com/telefon-one/react-native-replace-dialer#9f59b02c0829ff01258836dde0880f21511136da"
+
+"react-native-tele@file:..":
+  version "2.0.1"
+  dependencies:
+    "@react-native/new-app-screen" "0.80.0"
+    events "1.1.0"
+    react "19.1.0"
+    react-native "0.80.0"
+    react-native-permissions "^4.1.5"
+    react-native-replace-dialer "https://github.com/telefon-one/react-native-replace-dialer"
 
 react-native@0.80.0:
   version "0.80.0"
