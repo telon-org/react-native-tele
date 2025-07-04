@@ -5,7 +5,7 @@
   "version": "2.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telefon-one/react-native-tele.git"
+    "url": "git+https://github.com/telon-org/react-native-tele.git"
   },
   "author": {
     "name": "Anton Dodonov",
@@ -13,9 +13,9 @@
   },
   "license": "GPL-3.0-NativeMind",
   "bugs": {
-    "url": "https://github.com/telefon-one/react-native-tele/issues"
+    "url": "https://github.com/telon-org/react-native-tele/issues"
   },
-  "homepage": "https://github.com/telefon-one/react-native-tele#readme",
+  "homepage": "https://github.com/telon-org/react-native-tele#readme",
   "keywords": [
     "react-component",
     "react-native",
@@ -34,7 +34,7 @@
   "dependencies": {
     "events": "1.1.0",
     "react-native-permissions": "^4.1.5",
-    "react-native-replace-dialer": "https://github.com/telefon-one/react-native-replace-dialer"
+    "react-native-replace-dialer": "https://github.com/telon-org/react-native-replace-dialer"
   },
   "peerDependencies": {
     "react-native": ">=0.80.0"
