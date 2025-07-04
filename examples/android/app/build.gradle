@@ -108,8 +108,12 @@ android {
 }
 
 dependencies {
-    // The version of react-native is set by the React Native Gradle Plugin
+    implementation project(':react-native-tele')
     implementation("com.facebook.react:react-android")
+    implementation "com.google.code.gson:gson:2.10.1"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.annotation:annotation:1.7.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")

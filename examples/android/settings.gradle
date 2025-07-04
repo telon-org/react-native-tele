@@ -3,4 +3,6 @@ plugins { id("com.facebook.react.settings") }
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
 rootProject.name = 'ReactNativeTeleExample'
 include ':app'
+include ':react-native-tele'
+project(':react-native-tele').projectDir = new File(rootProject.projectDir, '../../android')
 includeBuild('../node_modules/@react-native/gradle-plugin')
