@@ -4,5 +4,5 @@ extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autoli
 rootProject.name = 'ReactNativeTeleExample'
 include ':app'
 include ':react-native-tele'
-project(':react-native-tele').projectDir = new File(rootProject.projectDir, '../../android')
+project(':react-native-tele').projectDir = new File(rootProject.projectDir, '../../android/app')
 includeBuild('../node_modules/@react-native/gradle-plugin')
