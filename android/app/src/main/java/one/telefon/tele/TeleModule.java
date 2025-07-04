@@ -14,6 +14,7 @@ import one.telefon.TeleManager;
 */
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 
 import com.facebook.react.bridge.*;
@@ -168,16 +169,16 @@ public class TeleModule extends ReactContextBaseJavaModule {
     public void sendEnvelope(int callId, Callback callback) {
         //int callbackId = receiver.register(callback);
 
-	string res;
+        String res = null;
         try {
-
+            TelephonyManager telephonyManager = (TelephonyManager) getReactApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
             //if (isSimCardPresent()) {
-            res=TelephonyManager.getDefault().sendEnvelopeWithStatus("TESTTEST");
+            //res = telephonyManager.sendEnvelopeWithStatus("TESTTEST");
             //}
         } catch (SecurityException expected) {
         }
 
-	callback.invoke(res);
+        callback.invoke(res);
 	
 	
         //Intent intent = TeleActions.createAnswerCallIntent(callbackId, callId, getReactApplicationContext());

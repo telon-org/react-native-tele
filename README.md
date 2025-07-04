@@ -60,6 +60,25 @@ Add the following permissions to your `android/app/src/main/AndroidManifest.xml`
 <uses-permission android:name="android.permission.READ_CONTACTS" />
 ```
 
+## Building the Android Library (.aar)
+
+To build the Android library (AAR) for use in other projects or for distribution:
+
+1. Open a terminal and navigate to the root of the repository.
+2. Run the following command:
+
+```bash
+cd android && ./gradlew bundleReleaseAar
+```
+
+3. After a successful build, the generated `.aar` file will be located at:
+
+```
+android/app/build/outputs/aar/app-release.aar
+```
+
+You can use this file as a standard Android library in your projects.
+
 ## Quick Start
 
 ### Basic Setup
